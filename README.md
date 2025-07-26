@@ -34,23 +34,24 @@ Telegram-бот, который позволяет получить информ
 
 2. Создайте файл `appsettings.json` в корне проекта с содержимым:
 
-   ```json
+ ```json
    {
-     "BotSettings": {
-       "Token": "ВАШ_TELEGRAM_BOT_TOKEN"
-     },
      "FnsApiSettings": {
-       "ApiKey": "ВАШ_API_КЛЮЧ_ФНС"
+      "ApiKey": "ВАШ_API_КЛЮЧ_ФНС",
+      "ApiUrl": "https://api-fns.ru/api"
+     },
+      "BotSettings": {
+      "Token": "ВАШ_TELEGRAM_BOT_TOKEN"
      }
    }
-   ```
+```
 
 3. Восстановите зависимости и запустите проект:
 
-   ```bash
-   dotnet restore
-   dotnet run
-   ```
+ ```bash
+     dotnet restore
+     dotnet run
+ ```
 
 
 ## 🔍 Описание работы команды `/inn`
